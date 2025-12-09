@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Space by Cat</title>
+    <link rel="icon" type="image/png" href="assets/cat-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neue+Montreal:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <!-- Floating Navigation (Desktop) - Hidden -->
+        <div class="floating-nav" style="display: none;">
+            <div class="desktop-nav">
+                <div class="menu-items">
+                    <div class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <span class="nav-text">Home</span>
+                            <div class="active-indicator"></div>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">About</span>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Lab</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <img src="https://www.figma.com/api/mcp/asset/3629f55b-84be-43e4-add0-37ac25cd11d4" alt="Mail" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://www.figma.com/api/mcp/asset/d4d790f2-7d4f-4b52-9c3a-37f5adbf4e1a" alt="Twitter" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://www.figma.com/api/mcp/asset/bbf99047-1ddb-4fae-8e19-0b475782cedb" alt="Telegram" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://www.figma.com/api/mcp/asset/bc23685a-1a7e-46f0-a60d-027c53cf4f29" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header-section">
+                <div class="logo-section">
+                    <a href="#" class="logo-link">
+                        <img src="assets/cat-icon.png" alt="Cat" class="cat-logo">
+                        <div class="logo-text">
+                            <div class="logo-title">Blank Space</div>
+                            <div class="logo-subtitle">by Cat</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="button-group">
+                    <div class="frenz-button">
+                        <div class="frenz-button-text">Frenz only :)</div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="assets/computer.png" alt="Computer" class="computer-image">
+                    </div>
+                    <div class="hero-text">
+                        <div class="scroll-indicator" onclick="document.querySelector('.pricing-section').scrollIntoView({ behavior: 'smooth' })">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 5v14M19 12l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-section">
+                <div class="pricing-header">
+                    <div class="pricing-button-group">
+                        <div class="pricing-button">
+                            <div class="pricing-button-text">Pricing Options</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-disclaimer">
+                    <p class="disclaimer-text">Final quote after your review.</p>
+                </div>
+
+                <div class="pricing-cards">
+                    <!-- Website Landing Page Card -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-inner">
+                            <div class="card-header">
+                                <h3 class="card-title">Website landing page</h3>
+                                <div class="card-tags">
+                                    <span class="card-tag">2-3 weeks</span>
+                                    <span class="card-tag">Web design</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-label">Investment without add-ons:</span>
+                                <span class="price-value">$1,600–$2,000 CAD</span>
+                            </div>
+                            <a href="https://cats-life.notion.site/example-contract-website-landing?source=copy_link" target="_blank" rel="noopener noreferrer" class="card-button">View an example contract</a>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <img src="assets/monitor.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Home page + 404 page, extra pages on demand</span>
+                                </div>
+                                <div class="feature-item sub-feature">
+                                    <img src="assets/swoop.svg" alt="" class="feature-icon small">
+                                    <span class="feature-text small">About, Team, Contact, Blog, etc.</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/mobile.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Responsive design for all necessary breakpoints</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/wand-magic-sparkles.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Custom design tailored to your brand identity</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/file-code.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Dev-ready Figma handoff</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">2 free rounds of revisions</span>
+                                </div>
+                            </div>
+                            <div class="card-addons">
+                                <h4 class="addons-title">Paid add-ons:</h4>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">More revisions</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/framer.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Framer, Webflow or other site builder and hosting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App and Game Design Card -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-inner">
+                            <div class="card-header">
+                                <h3 class="card-title">App and game design</h3>
+                                <div class="card-tags">
+                                    <span class="card-tag">2-3 weeks</span>
+                                    <span class="card-tag">UX & UI</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-label">Typical investment:</span>
+                                <span class="price-value">$2,200–$3,000 CAD</span>
+                            </div>
+                            <a href="https://cats-life.notion.site/example-contract-app-games?source=copy_link" target="_blank" rel="noopener noreferrer" class="card-button">View an example contract</a>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <img src="assets/window.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">UX mapping & high-fidelity UI</span>
+                                </div>
+                                <div class="feature-item sub-feature">
+                                    <img src="assets/swoop.svg" alt="" class="feature-icon small">
+                                    <span class="feature-text small">4-6 key screens + essential states</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/search.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Usability fixes + hierarchy improvements</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/mobile.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Responsive design for all necessary breakpoints</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/file-code.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Dev-ready Figma handoff</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">2 free rounds of revisions</span>
+                                </div>
+                            </div>
+                            <div class="card-addons">
+                                <h4 class="addons-title">Paid add-ons:</h4>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">More revisions</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/sparkle.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Vibe-code prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand Design Card -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-inner">
+                            <div class="card-header">
+                                <h3 class="card-title">Brand design</h3>
+                                <div class="card-tags">
+                                    <span class="card-tag">2-6 days</span>
+                                    <span class="card-tag">Mix n' match</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-label">Typical investment:</span>
+                                <span class="price-value">$650–$1,200 CAD</span>
+                            </div>
+                            <a href="https://cats-life.notion.site/example-contract-brand-design?source=copy_link" target="_blank" rel="noopener noreferrer" class="card-button">View an example contract</a>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <img src="assets/monitor.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">10 static assets marketing assets, 1 size each</span>
+                                </div>
+                                <div class="feature-item sub-feature">
+                                    <img src="assets/swoop.svg" alt="" class="feature-icon small">
+                                    <span class="feature-text small">Facebook / X / LinkedIn / Google Ads / Printables</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/file-code.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Brand system</span>
+                                </div>
+                                <div class="feature-item sub-feature">
+                                    <img src="assets/swoop.svg" alt="" class="feature-icon small">
+                                    <span class="feature-text small">Logo, Font, Color, Web Components, Accents, 4 Custom Icons</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/figma.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Source files + exports</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">2 free rounds of revisions</span>
+                                </div>
+                            </div>
+                            <div class="card-addons">
+                                <h4 class="addons-title">Paid add-ons:</h4>
+                                <div class="feature-item">
+                                    <img src="assets/rotate.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">More revisions</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/motion-lottie.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Motion graphics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design First Aid Card -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-inner">
+                            <div class="card-header">
+                                <h3 class="card-title">Design first aid</h3>
+                                <div class="card-tags">
+                                    <span class="card-tag">Same day</span>
+                                    <span class="card-tag">Single task</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-label">Fixed price:</span>
+                                <span class="price-value">$120 CAD</span>
+                            </div>
+                            <a href="https://cats-life.notion.site/example-contract-design-first-aid?source=copy_link" target="_blank" rel="noopener noreferrer" class="card-button">View an example contract</a>
+                            <div class="card-features">
+                                <div class="feature-item">
+                                    <img src="assets/monitor.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">2 hours of focused design time</span>
+                                </div>
+                                <div class="feature-item sub-feature">
+                                    <img src="assets/swoop.svg" alt="" class="feature-icon small">
+                                    <span class="feature-text small">Hand-off time is separate</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="assets/figma.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Source files + exports</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Collaborate Section -->
+        <div class="collaborate-section">
+                <div class="collaborate-content">
+                    <div class="collaborate-header">
+                        <div class="collaborate-button-group">
+                            <div class="collaborate-button">
+                                <div class="collaborate-button-text">Collaborate</div>
+                            </div>
+                        </div>
+                        <div class="collaborate-heading">
+                            <div class="heading-line">
+                                <p class="heading-text">Fill out the form, and I'll continue that at (226)700-9201.</p>
+                            </div>
+                        </div>
+                        <div class="collaborate-form">
+                            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xrbnygqj" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Name <span class="required-asterisk">*</span></label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required-asterisk">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">What option would you like? <span class="required-asterisk">*</span></label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select an option</option>
+                                        <option value="website-landing">Website landing page</option>
+                                        <option value="app-game">App and game design</option>
+                                        <option value="brand-design">Brand design</option>
+                                        <option value="design-first-aid">Design first aid</option>
+                                        <option value="multiple">Multiple options</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="request-group" style="display: none;">
+                                    <label for="request" id="request-label">Please explain what you are requesting and envisioning for the design.</label>
+                                    <textarea id="request" name="request" rows="5"></textarea>
+                                </div>
+                                <div class="form-group" id="date-group" style="display: none;">
+                                    <label for="deadline">When do you need the design done by?</label>
+                                    <input type="date" id="deadline" name="deadline">
+                                </div>
+                                <div class="form-group" id="references-group" style="display: none;">
+                                    <label for="references">Please share any references, links, or inspiration. Otherwise, you can send them to me over <a href="tel:2267009201" style="color: var(--active-color); text-decoration: underline;">text</a> or <a href="mailto:catherinehoang44@gmail.com" style="color: var(--active-color); text-decoration: underline;">email</a>.</label>
+                                    <textarea id="references" name="references" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="form-submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-section">
+        </div>
+    </div>
+    <script>
+        // Form dropdown handler
+        (function() {
+            const serviceSelect = document.getElementById('service');
+            const requestGroup = document.getElementById('request-group');
+            const requestField = document.getElementById('request');
+            const requestLabel = document.getElementById('request-label');
+            const dateGroup = document.getElementById('date-group');
+            const dateField = document.getElementById('deadline');
+            const referencesGroup = document.getElementById('references-group');
+            const referencesField = document.getElementById('references');
+            
+            const requestTexts = {
+                'website-landing': 'Please describe your vision for the website landing page. What pages do you need, what should the design convey, and any specific features or functionality you\'re envisioning?',
+                'app-game': 'Please explain your app or game concept. What screens and interactions are essential? What user experience are you aiming to create?',
+                'brand-design': 'Please describe your brand vision. What personality, values, and aesthetic should the brand design reflect? What assets do you need?',
+                'design-first-aid': 'Please explain the specific design task you need help with. What\'s the challenge or goal you\'re trying to address?',
+                'multiple': 'Please describe all the design services you\'re interested in. What combination of options do you need, and how do they work together for your project?'
+            };
+            
+            serviceSelect.addEventListener('change', function() {
+                const selectedValue = this.value;
+                
+                if (selectedValue) {
+                    // Set request label with asterisk
+                    requestLabel.innerHTML = requestTexts[selectedValue] + ' <span class="required-asterisk">*</span>';
+                    requestGroup.style.display = 'flex';
+                    referencesGroup.style.display = 'flex';
+                    requestField.required = true;
+                    
+                    // Show date field for all options except design-first-aid (not required)
+                    if (selectedValue !== 'design-first-aid') {
+                        dateGroup.style.display = 'flex';
+                        dateField.required = false;
+                    } else {
+                        dateGroup.style.display = 'none';
+                        dateField.required = false;
+                        dateField.value = '';
+                    }
+                } else {
+                    requestGroup.style.display = 'none';
+                    dateGroup.style.display = 'none';
+                    referencesGroup.style.display = 'none';
+                    requestField.required = false;
+                    dateField.required = false;
+                    requestField.value = '';
+                    dateField.value = '';
+                    referencesField.value = '';
+                }
+            });
+        })();
+        
+        // Form submission handler
+        (function() {
+            const form = document.getElementById('contact-form');
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(form);
+                
+                // Get service name for better readability in email
+                const serviceNames = {
+                    'website-landing': 'Website landing page',
+                    'app-game': 'App and game design',
+                    'brand-design': 'Brand design',
+                    'design-first-aid': 'Design first aid',
+                    'multiple': 'Multiple options'
+                };
+                
+                const service = formData.get('service');
+                const serviceName = serviceNames[service] || service;
+                
+                // Add formatted service name to form data
+                formData.append('_subject', `New Contact Form Submission - ${serviceName}`);
+                
+                // Show loading state
+                const submitButton = form.querySelector('.form-submit');
+                const originalText = submitButton.textContent;
+                submitButton.textContent = 'Sending...';
+                submitButton.disabled = true;
+                
+                try {
+                    const response = await fetch('https://formspree.io/f/xrbnygqj', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        alert('Thank you! Your message has been sent successfully.');
+                        form.reset();
+                        // Hide conditional fields
+                        document.getElementById('request-group').style.display = 'none';
+                        document.getElementById('date-group').style.display = 'none';
+                        document.getElementById('references-group').style.display = 'none';
+                    } else {
+                        const data = await response.json();
+                        if (data.errors) {
+                            alert('There was an error: ' + data.errors.map(error => error.message).join(', '));
+                        } else {
+                            alert('There was an error submitting the form. Please try again.');
+                        }
+                    }
+                } catch (error) {
+                    alert('There was an error submitting the form. Please try again or email catherinehoang44@gmail.com directly.');
+                } finally {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
