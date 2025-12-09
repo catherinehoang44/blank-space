@@ -44,6 +44,8 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     box-shadow: 0px 4.121px 6.567px 0px rgba(40, 43, 59, 0.05),
                 0px 11.395px 18.156px 0px rgba(40, 43, 59, 0.08),
                 0px 27.434px 43.713px 0px rgba(40, 43, 59, 0.1),
@@ -113,19 +115,20 @@ body {
 .header-section {
     background-color: var(--bg-color);
     border-bottom: 0.625px solid var(--border-color);
-    max-width: 992px;
+    max-width: 991.99px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 24px 16px 24px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
+    position: relative;
 }
 
 .logo-section {
-    width: 142px;
-    height: 52px;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .logo-link {
@@ -138,6 +141,13 @@ body {
     color: var(--text-color);
 }
 
+.cat-container {
+    width: 52px;
+    height: 52px;
+    position: relative;
+    flex-shrink: 0;
+}
+
 .cat-logo {
     width: 52px;
     height: 52px;
@@ -145,18 +155,23 @@ body {
 }
 
 .logo-text {
-    width: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .logo-title {
     font-size: 16px;
     line-height: 15px;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .logo-subtitle {
     font-size: 16px;
     line-height: 15px;
+    white-space: nowrap;
 }
 
 /* Button Group - Frenz Button */
@@ -167,13 +182,19 @@ body {
     position: relative;
 }
 
+.button-group .cat-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
 .frenz-button {
     width: 162.739px;
     height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/Button-Group-BG.png');
+    background-image: url('assets/plain-button-group.png');
     background-size: cover;
     background-position: center;
 }
@@ -197,8 +218,6 @@ body {
     padding: 72px 16px;
     max-width: 992px;
     margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .hero-content {
@@ -237,7 +256,7 @@ body {
     align-items: center;
     animation: bounce 2s infinite;
     cursor: pointer;
-    color: var(--text-color);
+    color: #808080;
     opacity: 0.7;
     transition: opacity 0.3s;
 }
@@ -286,8 +305,6 @@ body {
     padding: 48px 16px 64px;
     max-width: 992px;
     margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .pricing-header {
@@ -369,9 +386,8 @@ body {
     flex-wrap: wrap;
     gap: 16px;
     align-items: flex-start;
-    width: 100%;
-    max-width: 960px;
-    justify-content: center;
+    width: 960px;
+    max-width: 100%;
 }
 
 .pricing-card {
@@ -379,11 +395,9 @@ body {
     border-radius: 32px;
     padding: 8px;
     max-width: 480px;
-    width: 100%;
-    flex: 1 1 300px;
-    min-width: 300px;
+    width: 472px;
+    flex: 0 0 auto;
     position: relative;
-    box-sizing: border-box;
 }
 
 .pricing-card {
@@ -563,8 +577,6 @@ body {
     padding: 48px 16px 64px 16px;
     max-width: 992px;
     margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .collaborate-content {
@@ -718,7 +730,7 @@ body {
     white-space: nowrap;
     transition: opacity 0.2s;
     cursor: pointer;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .form-submit:hover {
@@ -744,10 +756,6 @@ body {
         max-width: 100%;
     }
     
-    .pricing-section {
-        max-width: 100%;
-    }
-    
     .pricing-cards {
         width: 100%;
         justify-content: center;
@@ -757,14 +765,6 @@ body {
         width: 100%;
         max-width: 100%;
     }
-    
-    .collaborate-section {
-        max-width: 100%;
-    }
-    
-    .footer-section {
-        max-width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -772,21 +772,14 @@ body {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
-        padding: 20px 16px;
     }
     
     .logo-section {
         width: auto;
     }
     
-    .hero-section {
-        padding: 48px 16px;
-        min-height: auto;
-    }
-    
     .hero-content {
         max-width: 100%;
-        gap: 24px;
     }
     
     .hero-image {
@@ -794,15 +787,6 @@ body {
         max-width: 400px;
         height: auto;
         aspect-ratio: 480 / 433.5;
-    }
-    
-    .hero-text {
-        padding: 24px 20px 0;
-    }
-    
-    .scroll-indicator svg {
-        width: 28px;
-        height: 28px;
     }
     
     .hero-tagline {
@@ -819,10 +803,6 @@ body {
         font-size: 11px;
     }
     
-    .pricing-section {
-        padding: 32px 16px 48px;
-    }
-    
     .pricing-title {
         font-size: 28px;
         line-height: 34px;
@@ -831,37 +811,10 @@ body {
     .pricing-cards {
         flex-direction: column;
         align-items: stretch;
-        gap: 20px;
     }
     
     .pricing-card {
         width: 100%;
-        max-width: 100%;
-        min-width: auto;
-    }
-    
-    .collaborate-section {
-        padding: 32px 16px 48px;
-    }
-    
-    .collaborate-heading {
-        margin-bottom: 24px;
-    }
-    
-    .heading-text {
-        font-size: 32px;
-        line-height: 38px;
-    }
-    
-    .contact-form {
-        gap: 16px;
-    }
-    
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-        font-size: 16px;
-        padding: 10px 14px;
     }
 }
 
@@ -870,45 +823,12 @@ body {
         padding: 16px;
     }
     
-    .logo-link {
-        gap: 6px;
-    }
-    
-    .cat-logo {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .logo-text {
-        width: auto;
-    }
-    
-    .logo-title,
-    .logo-subtitle {
-        font-size: 14px;
-        line-height: 16px;
-    }
-    
     .hero-section {
-        padding: 32px 16px;
-    }
-    
-    .hero-content {
-        gap: 20px;
+        padding: 40px 16px;
     }
     
     .hero-image {
-        max-width: 100%;
-        width: 100%;
-    }
-    
-    .hero-text {
-        padding: 20px 16px 0;
-    }
-    
-    .scroll-indicator svg {
-        width: 24px;
-        height: 24px;
+        max-width: 300px;
     }
     
     .hero-tagline {
@@ -927,8 +847,7 @@ body {
     }
     
     .pricing-section {
-        padding: 24px 16px 40px;
-        gap: 24px;
+        padding: 32px 16px 48px;
     }
     
     .pricing-title {
@@ -936,91 +855,35 @@ body {
         line-height: 30px;
     }
     
-    .pricing-card {
-        border-radius: 24px;
-        padding: 6px;
-    }
-    
     .pricing-card-inner {
-        padding: 16px;
-        gap: 16px;
+        padding: 20px;
     }
     
     .card-title {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 20px;
     }
     
-    .card-tag {
-        font-size: 11px;
-        padding: 2px 5px;
-    }
-    
-    .price-label,
-    .price-value {
-        font-size: 14px;
-    }
-    
-    .card-button {
-        height: 44px;
-        font-size: 15px;
-        padding: 4px 16px;
-    }
-    
-    .feature-text {
-        font-size: 13px;
-        line-height: 22px;
-    }
-    
-    .feature-text.small {
-        font-size: 11px;
-    }
-    
-    .collaborate-section {
-        padding: 24px 16px 40px;
+    .heading-text {
+        font-size: 32px;
+        line-height: 38px;
     }
     
     .collaborate-heading {
         width: 100%;
         max-width: 100%;
-        margin-bottom: 20px;
     }
     
     .heading-text {
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: -0.5px;
+        font-size: 28px;
+        line-height: 36px;
     }
     
     .collaborate-form {
         max-width: 100%;
     }
     
-    .contact-form {
-        gap: 14px;
-    }
-    
-    .form-group label {
-        font-size: 14px;
-    }
-    
     .form-group input,
-    .form-group textarea,
-    .form-group select {
+    .form-group textarea {
         font-size: 14px;
-        padding: 10px 12px;
-    }
-    
-    .form-submit {
-        height: 44px;
-        font-size: 15px;
-        padding: 4px 18px;
-        width: 100%;
-        align-self: stretch;
-    }
-    
-    .footer-section {
-        height: 32px;
-        padding-top: 16px;
     }
 }
