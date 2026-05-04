@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blank Space</title>
+    <title>Cat Designs</title>
     <link rel="icon" type="image/png" href="assets/cat-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +68,7 @@
         <div class="hero-section">
                 <div class="hero-content">
                     <div class="hero-image">
-                        <img src="assets/computer.png" alt="Computer" class="computer-image">
+                        <img src="assets/computer.png" alt="Computer" class="computer-image header-img">
                     </div>
                     <div class="hero-text">
                         <div class="scroll-indicator" onclick="document.querySelector('.pricing-section').scrollIntoView({ behavior: 'smooth' })">
@@ -82,14 +82,6 @@
 
         <!-- Pricing Section -->
         <div class="pricing-section">
-                <div class="pricing-header">
-                    <div class="pricing-button-group">
-                        <div class="pricing-button">
-                            <div class="pricing-button-text">Pricing Options</div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="pricing-disclaimer">
                     <p class="disclaimer-text">Final quote after your review.</p>
                 </div>
@@ -129,18 +121,18 @@
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/file-code.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">Dev-ready Figma handoff</span>
+                                    <span class="feature-text">Dev-ready Figma handoff and vibe-coded prototype</span>
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">2 free rounds of revisions</span>
+                                    <span class="feature-text">Unlimited revisions during set duration</span>
                                 </div>
                             </div>
                             <div class="card-addons">
                                 <h4 class="addons-title">Paid add-ons:</h4>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">More revisions</span>
+                                    <span class="feature-text">Revision period extension</span>
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/framer.svg" alt="" class="feature-icon">
@@ -184,22 +176,22 @@
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/file-code.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">Dev-ready Figma handoff</span>
+                                    <span class="feature-text">Dev-ready Figma handoff and vibe-coded prototype</span>
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">2 free rounds of revisions</span>
+                                    <span class="feature-text">Unlimited revisions during set duration</span>
                                 </div>
                             </div>
                             <div class="card-addons">
                                 <h4 class="addons-title">Paid add-ons:</h4>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">More revisions</span>
+                                    <span class="feature-text">Revision period extension</span>
                                 </div>
                                 <div class="feature-item">
-                                    <img src="assets/sparkle.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">Vibe-code prototyping</span>
+                                    <img src="assets/motion-lottie.svg" alt="" class="feature-icon">
+                                    <span class="feature-text">Motion graphics</span>
                                 </div>
                             </div>
                         </div>
@@ -243,14 +235,14 @@
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">2 free rounds of revisions</span>
+                                    <span class="feature-text">Unlimited revisions during set duration</span>
                                 </div>
                             </div>
                             <div class="card-addons">
                                 <h4 class="addons-title">Paid add-ons:</h4>
                                 <div class="feature-item">
                                     <img src="assets/rotate.svg" alt="" class="feature-icon">
-                                    <span class="feature-text">More revisions</span>
+                                    <span class="feature-text">Revision period extension</span>
                                 </div>
                                 <div class="feature-item">
                                     <img src="assets/motion-lottie.svg" alt="" class="feature-icon">
@@ -298,11 +290,6 @@
         <div class="collaborate-section">
                 <div class="collaborate-content">
                     <div class="collaborate-header">
-                        <div class="collaborate-button-group">
-                            <div class="collaborate-button">
-                                <div class="collaborate-button-text">Collaborate</div>
-                            </div>
-                        </div>
                         <div class="collaborate-heading">
                             <div class="heading-line">
                                 <p class="heading-text">Fill out the form,<br>and we'll be in touch :)</p>
@@ -317,6 +304,10 @@
                                 <div class="form-group">
                                     <label for="email">Email <span class="required-asterisk">*</span></label>
                                     <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="referred-by">Who sent you my way?</label>
+                                    <input type="text" id="referred-by" name="referred_by" autocomplete="off">
                                 </div>
                                 <div class="form-group">
                                     <label for="service">What option would you like? <span class="required-asterisk">*</span></label>
